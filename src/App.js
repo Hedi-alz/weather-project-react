@@ -7,7 +7,7 @@ export default function App() {
       <div className="container">
         <Weather />
         <p>
-          this project is created bye <em>Hedieh</em> ans is{" "}
+          this project is created bye <em>Hedieh</em> and is{" "}
           <a
             href="https://github.com/Hedi-alz/weather-project-react"
             rel="noreferrer"
