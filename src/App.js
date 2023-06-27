@@ -1,10 +1,11 @@
 import "./App.css";
+import Weather from "./Weather";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
-        weather app
+        <Weather />
         <p>
           this project is created bye <em>Hedieh</em> ans is{" "}
           <a
