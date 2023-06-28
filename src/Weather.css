@@ -34,17 +34,17 @@ ul {
 }
 .Weahter img {
   height: 64px;
-  margin-right: 10px;
-  display: inline-block;
+
   width: 64px;
 }
 .Weather .unit {
   font-size: 16px;
   color: rgb(33, 33, 33);
   font-weight: 400;
-  position: relative;
-  top: -34px;
   margin-left: 5px;
-
+  margin-bottom: 100px;
   line-height: 1;
+}
+img {
+  margin-bottom: 30px;
 }
