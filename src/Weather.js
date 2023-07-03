@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Currentdate from "./Currentdate";
+//import WeatherIcon from "./WeatherIcon"
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -17,7 +18,7 @@ export default function Weather(props) {
       city: response.data.name,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
-      iconUrl: `https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png`,
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
