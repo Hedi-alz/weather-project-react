@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Currentdate from "./Currentdate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherUnit from "./WeatherUnit";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -68,13 +69,14 @@ export default function Weather(props) {
           <li>{weather.description}</li>
           <div className="row mt-3">
             <div className="col-6">
-              <div className="icon">
-                <WeatherIcon code={weather.icon} />
+              <div className="clearfix">
+                <div className="float-left">
+                  <div className="icon">
+                    <WeatherIcon code={weather.icon} />
+                  </div>
+                </div>
+                <WeatherUnit celsius={weather.temperature} />
               </div>
-              <span className="temperature">
-                {Math.round(weather.temperature)}
-              </span>
-              <span className="unit">°C</span>
             </div>
             <div className="col-6">
               <ul>
