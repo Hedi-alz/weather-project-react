@@ -44,3 +44,7 @@ ul {
   line-height: 1;
   top: -34px;
 }
+
+.Weather canvas {
+  margin: 10px auto;
+}
