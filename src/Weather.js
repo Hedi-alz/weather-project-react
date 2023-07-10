@@ -3,6 +3,7 @@ import axios from "axios";
 import Currentdate from "./Currentdate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherUnit from "./WeatherUnit";
+import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -72,7 +73,7 @@ export default function Weather(props) {
               <div className="clearfix">
                 <div className="float-left">
                   <div className="icon">
-                    <WeatherIcon code={weather.icon} />
+                    <WeatherIcon code={weather.icon} size={52} />
                   </div>
                 </div>
                 <WeatherUnit celsius={weather.temperature} />
@@ -86,6 +87,7 @@ export default function Weather(props) {
             </div>
           </div>
         </ul>
+        <WeatherForecast />
       </div>
     );
   } else {
