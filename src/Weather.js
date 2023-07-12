@@ -14,6 +14,7 @@ export default function Weather(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
+      coord: response.data.coord,
       temperature: response.data.main.temp,
       date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
@@ -87,7 +88,7 @@ export default function Weather(props) {
             </div>
           </div>
         </ul>
-        <WeatherForecast />
+        <WeatherForecast coord={weather.coord} />
       </div>
     );
   } else {
