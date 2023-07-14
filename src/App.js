@@ -7,7 +7,11 @@ export default function App() {
       <div className="container">
         <Weather defaultCity="London" />
         <p>
-          This project is created bye <em>Hedieh</em> and is{" "}
+          This project is created bye{" "}
+          <strong>
+            <em>Hedieh</em>
+          </strong>{" "}
+          and is{" "}
           <a
             href="https://github.com/Hedi-alz/weather-project-react"
             rel="noreferrer"

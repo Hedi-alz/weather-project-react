@@ -45,12 +45,11 @@ export default function Weather(props) {
       <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-9">
+            <div className="col-9 search">
               <input
                 type="search"
                 placeholder="search for a city"
-                className="form-contorl"
-                autoFocus="on"
+                className="form-control"
                 onChange={handleChange}
               />
             </div>
@@ -64,7 +63,7 @@ export default function Weather(props) {
           </div>
         </form>
         <h1>{weather.city}</h1>
-        <ul>
+        <ul className="data">
           <li>
             <Currentdate date={weather.date} />
           </li>
@@ -74,7 +73,7 @@ export default function Weather(props) {
               <div className="clearfix">
                 <div className="float-left">
                   <div className="icon">
-                    <WeatherIcon code={weather.icon} size={52} />
+                    <WeatherIcon code={weather.icon} size={42} />
                   </div>
                 </div>
                 <WeatherUnit celsius={weather.temperature} />
